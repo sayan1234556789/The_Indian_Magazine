@@ -2,210 +2,43 @@ import React, { Component } from 'react'
 import NewsItem from './NewsItem'
 
 export default class News extends Component {
-    article = [
-{
-"source": {
-"id": null,
-"name": "Android Central"
-},
-"author": "techkritiko@gmail.com (Jay Bonggolto) , Jay Bonggolto",
-"title": "Galaxy S26's rumored wireless charging upgrade has a major catch",
-"description": "Samsung Galaxy S26 wireless charging specs have surfaced on a certification portal, and it's bad news for Qi2 fans.",
-"url": "https://www.androidcentral.com/phones/samsung-galaxy/galaxy-s26s-rumored-wireless-charging-upgrade-has-a-major-catch",
-"urlToImage": "https://cdn.mos.cms.futurecdn.net/UcszCUZ6wQw9zpBXQVRSWK-2500-80.jpg",
-"publishedAt": "2026-02-07T17:48:07Z",
-"content": "What you need to know\r\n<ul><li>A certification listing suggests the Galaxy S26 series won’t have native magnetic hardware for proper Qi2 support.</li><li>Instead, it will likely rely on magnetic case… [+3240 chars]"
-},
-{
-"source": {
-"id": null,
-"name": "MacRumors"
-},
-"author": "Mitchel Broussard",
-"title": "Get $100 Off Apple Watch Series 11 on Amazon, Available From $299",
-"description": "Amazon this weekend has all-time low prices on the Apple Watch Series 11, with $100 discounts across numerous models of the smartwatch. This time around, we're tracking these record low prices on nearly every aluminum model.\n\n\n\nNote: MacRumors is an affiliate…",
-"url": "https://www.macrumors.com/2026/02/07/apple-watch-series-11-100-off-2/",
-"urlToImage": "https://images.macrumors.com/t/hRysE52du0SUDP2A1LgwmkZ5SvI=/2500x/article-new/2026/02/apple-watch-series-11-dark-blue.jpeg",
-"publishedAt": "2026-02-07T15:46:11Z",
-"content": "Amazon this weekend has all-time low prices on the Apple Watch Series 11, with $100 discounts across numerous models of the smartwatch. This time around, we're tracking these record low prices on nea… [+1033 chars]"
-},
-{
-"source": {
-"id": null,
-"name": "CNET"
-},
-"author": "Tyler Graham",
-"title": "Apple MacBook Rumors: New M5 MacBook Pros Could Be Here Soon",
-"description": "In addition to Pro models getting M5 Pro and M5 Max chips, Apple is reportedly prepping a budget MacBook for $599, an M5 refresh for the MacBook Air and the first MacBook with a touchscreen OLED display.",
-"url": "https://www.cnet.com/tech/computing/macbook-rumors-new-macbook-pros-prices-release-dates/",
-"urlToImage": "https://www.cnet.com/a/img/resize/1191bbecaef5a5df6d25a2050a981f5e0c7413dd/hub/2024/11/12/c2197fec-28c8-4d94-8026-258d9509100a/apple-macbook-pro-16-m4-pro-6519.jpg?auto=webp&fit=crop&height=675&width=1200",
-"publishedAt": "2026-02-07T12:01:00Z",
-"content": "If the rumor mill is to be believed, 2026 will feature an unusually large harvest of Apple products. This is shaping up to be a standout year for MacBooks, and we might be only a week or two away fro… [+8990 chars]"
-},
-{
-"source": {
-"id": null,
-"name": "CNET"
-},
-"author": "Lori Grunin",
-"title": "M5 Pro, M5 Max: What I Expect from Apple's Next-Gen Chips",
-"description": "Maybe more than just cores.",
-"url": "https://www.cnet.com/tech/computing/m5-pro-m5-max-apples-next-gen-chips/",
-"urlToImage": "https://www.cnet.com/a/img/resize/dd4264431f14c686c4113cfa201261be010c203a/hub/2026/02/06/d3f341a3-1359-4708-8487-9f3b4d672aed/m5-m5-max-m5-pro.png?auto=webp&fit=crop&height=675&width=1200",
-"publishedAt": "2026-02-07T12:01:03Z",
-"content": "Rumors have it that the forthcoming higher-end M5 Pro and M5 Max processors will be architected differently than the M5, presumably to improve scalability. They are expected to debut in the next wave… [+3750 chars]"
-},
-{
-"source": {
-"id": null,
-"name": "MacRumors"
-},
-"author": "Hartley Charlton",
-"title": "Apple Testing Two Major iPhone 18 Pro Camera Upgrades",
-"description": "Apple is actively testing two major rear camera improvements for the iPhone, according to a reputable leaker.\n\n\n\n\n\nThe Weibo user known as \"Digital Chat Station\" claims that Apple is testing a new main camera for the ‌iPhone‌ with a variable aperture. A varia…",
-"url": "https://www.macrumors.com/2026/02/07/two-major-iphone-18-pro-camera-upgrades/",
-"urlToImage": "https://images.macrumors.com/t/P6o_sCTViql2FdQGH-vv-sg5FGU=/2000x/article-new/2025/09/iphone-17-cameras-zoom.jpg",
-"publishedAt": "2026-02-07T20:26:04Z",
-"content": "Apple is actively testing two major rear camera improvements for the iPhone, according to a reputable leaker.\r\nThe Weibo user known as \"Digital Chat Station\" claims that Apple is testing a new main c… [+2251 chars]"
-},
-{
-"source": {
-"id": null,
-"name": "NPR"
-},
-"author": "Juliana Kim",
-"title": "DVDs and public transit: Boycott drives people to ditch Big Tech to protest ICE",
-"description": "A sweeping boycott has begun — targeting tech giants who participants believe are enabling President Trump and his immigration crackdown.",
-"url": "https://www.npr.org/2026/02/07/nx-s1-5704402/boycott-tech-ice-scott-galloway",
-"urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+313/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F55%2F7d%2F6c02d8dc492c99b9bab67bca62f7%2Fgettyimages-2259134838.jpg",
-"publishedAt": "2026-02-07T10:00:00Z",
-"content": "In Portland, Ore., Brittany Trahan started buying DVDs rather than paying for Netflix and Apple TV, while Lisa Shannon has been relying on public transit instead of taking an Uber. And in McDonough, … [+7838 chars]"
-},
-{
-"source": {
-"id": null,
-"name": "NPR"
-},
-"author": "Alana Wise",
-"title": "One week since Nancy Guthrie was last seen, here's what we know",
-"description": "Nancy Guthrie was last seen a week ago. In the days since, investigators have launched a frantic search to return the 84-year-old home.",
-"url": "https://www.npr.org/2026/02/07/nx-s1-5705280/nancy-guthrie-case-latest",
-"urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1864x1049+0+390/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc8%2F62%2Fe783f2884aeaa0c847212571bd8e%2Fap26038166151392.jpg",
-"publishedAt": "2026-02-07T21:33:16Z",
-"content": "It been a week since Nancy Guthrie was last seen. She joined family for dinner before returning home at night, not to be heard from since.\r\nInvestigators are still trying to make sense of what happen… [+4833 chars]"
-},
-{
-"source": {
-"id": null,
-"name": "Slashdot.org"
-},
-"author": "EditorDavid",
-"title": "Apple Plans to Allow Outside Voice-Controlled AI Chatbots in CarPlay",
-"description": "Apple \"is preparing to allow voice-controlled AI apps from other companies in CarPlay,\" reports Bloomberg, citing \"people familiar with the matter.\" \n\nBloomberg calls it \"a move that will let users query AI chatbots through its vehicle interface for the first…",
-"url": "https://apple.slashdot.org/story/26/02/07/0830248/apple-plans-to-allow-outside-voice-controlled-ai-chatbots-in-carplay",
-"urlToImage": "https://a.fsdn.com/sd/topics/transportation_64.png",
-"publishedAt": "2026-02-07T17:34:00Z",
-"content": "Apple \"is preparing to allow voice-controlled AI apps from other companies in CarPlay,\" reports Bloomberg, citing \"people familiar with the matter.\"Bloomberg calls it \"a move that will let users quer… [+986 chars]"
-},
-{
-"source": {
-"id": "business-insider",
-"name": "Business Insider"
-},
-"author": "Theron Mohamed",
-"title": "Why 'Big Short' investor Michael Burry's pick for the next Warren Buffett is GameStop's Ryan Cohen",
-"description": "Michael Burry of \"The Big Short\" fame said that Ryan Cohen has the potential to follow Warren Buffett's playbook and build huge value at GameStop.",
-"url": "https://www.businessinsider.com/michael-burry-next-warren-buffett-gamestop-ryan-cohen-acquisition-deal-2026-2",
-"urlToImage": "https://i.insider.com/698679c8e1ba468a96aba061?width=1200&format=jpeg",
-"publishedAt": "2026-02-07T09:50:01Z",
-"content": "Michael Burry of \"The Big Short\" fame is skeptical of the AI boom.Jim Spellman/Getty Images; Getty Images; Tyler Le/BI\r\n<ul><li>Michael Burry says Ryan Cohen could be the next Warren Buffett.</li><li… [+9014 chars]"
-},
-{
-"source": {
-"id": null,
-"name": "Kotaku"
-},
-"author": "Mike Fazioli",
-"title": "Apple iPad (A16 Chip) Sees Another Drop, Catch a Falling Star at a Record Low Near AirPods Pro Pricing",
-"description": "The underrated and unsung hero of the iPad family is back down to just $300, a great alternative to premium-level tablet prices.",
-"url": "https://kotaku.com/apple-ipad-a16-chip-sees-another-drop-catch-a-falling-star-at-a-record-low-near-airpods-pro-pricing-2000666503",
-"urlToImage": "https://kotaku.com/app/uploads/2026/01/ipad-11inch-1200x675.jpg",
-"publishedAt": "2026-02-07T16:09:26Z",
-"content": "Apple’s A16 iPad has never really gotten the love it deserves. With brand-new Air and Minis also being released in 2025, along with killer competitor models from Samsung and even the Kindle Scribe, t… [+2403 chars]"
-},
-{
-"source": {
-"id": null,
-"name": "Kotaku"
-},
-"author": "Kotaku Deals",
-"title": "Super Bowl LX 2026: How to Watch and What to Know About Sunday’s Broadcast",
-"description": "Watch Super Bowl 2026 for free! Get the February 8 kickoff time & streaming tips !",
-"url": "https://kotaku.com/super-bowl-lx-2026-how-to-watch-and-what-to-know-about-sundays-broadcast-2000666368",
-"urlToImage": "https://kotaku.com/app/uploads/2026/02/Super-Bowl-LX-2026-how-to-watch.jpg",
-"publishedAt": "2026-02-07T16:23:56Z",
-"content": "The countdown is almost over. This Sunday, February 8, 2026, the New England Patriots face off against the Seattle Seahawks at Levi’s Stadium in Santa Clara. With a record-breaking halftime show feat… [+2968 chars]"
-},
-{
-"source": {
-"id": null,
-"name": "Hipertextual"
-},
-"author": "Rubén Chicharro",
-"title": "El acto más “heroico” de Justin Bieber: amenazar a Apple para que quiten esta función del iPhone",
-"description": "A diferencia de celebridades como Taylor Swift, que son más reservadas, Justin Bieber publica todo lo que piensa en sus redes sociales. De hecho, el cantante canadiense, quien en 2025 lanzó su álbum Swag, ya ha sido fruto de diversas polémicas a lo largo de s…",
-"url": "https://hipertextual.com/apple/el-acto-mas-heroico-de-justin-bieber-amenazar-a-apple-para-que-quiten-esta-funcion-del-iphone/",
-"urlToImage": "https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2026/02/justin-bieber-boton.jpg?fit=2424%2C1616&quality=70&strip=all&ssl=1",
-"publishedAt": "2026-02-07T11:00:00Z",
-"content": "A diferencia de celebridades como Taylor Swift, que son más reservadas, Justin Bieber publica todo lo que piensa en sus redes sociales. De hecho, el cantante canadiense, quien en 2025 lanzó su álbum … [+2563 chars]"
-},
-{
-"source": {
-"id": null,
-"name": "Hipertextual"
-},
-"author": "José María López",
-"title": "Passkeys de WhatsApp: qué son y cómo activarlas para evitar que te roben tu cuenta",
-"description": "WhatsApp es una de las aplicaciones más populares en medio mundo y, además, una de las apps con la que pasamos más tiempo. Ahí guardamos conversaciones, audios, archivos y recuerdos de amigos, familiares, clientes y compañeros de trabajo. Así que deberíamos p…",
-"url": "https://hipertextual.com/guias/passkeys-llaves-de-acceso-whatsapp/",
-"urlToImage": "https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2026/02/Passkeys-Llaves-Acceso-WhatsApp-Escudo-Espada.jpg?fit=1920%2C1280&quality=70&strip=all&ssl=1",
-"publishedAt": "2026-02-07T07:00:00Z",
-"content": "WhatsApp es una de las aplicaciones más populares en medio mundo y, además, una de las apps con la que pasamos más tiempo. Ahí guardamos conversaciones, audios, archivos y recuerdos de amigos, famili… [+5690 chars]"
-},
-{
-"source": {
-"id": null,
-"name": "Xataka.com"
-},
-"author": "Amparo Babiloni",
-"title": "Alguien ha pagado 2,4 millones por un cheque de 500. Lleva las firmas de Steve Jobs y Wozniak",
-"description": "Convertir 500 dólares en 2,4 millones podría ser el sueño húmedo de cualquier cryptobro, pero la historia que nos ocupa no tiene nada que ver con inversión. El protagonista es un pequeño trozo de papel, y no uno cualquiera, sino uno que fue clave en la creaci…",
-"url": "https://www.xataka.com/magnet/alguien-ha-pagado-2-4-millones-cheque-500-lleva-firmas-steve-jobs-wozniak",
-"urlToImage": "https://i.blogs.es/014bbb/apple_i_computer/840_560.jpeg",
-"publishedAt": "2026-02-07T12:31:52Z",
-"content": "Convertir 500 dólares en 2,4 millones podría ser el sueño húmedo de cualquier cryptobro, pero la historia que nos ocupa no tiene nada que ver con inversión. El protagonista es un pequeño trozo de pap… [+2216 chars]"
-},
-{
-"source": {
-"id": null,
-"name": "The Atlantic"
-},
-"author": "Hanna Rosin",
-"title": "The Meaning of Melania",
-"description": "The most interesting part of the first lady’s film is what it leaves out.",
-"url": "https://www.theatlantic.com/podcasts/2026/02/the-meaning-of-melania/685880/",
-"urlToImage": "https://cdn.theatlantic.com/thumbor/Eilzamf7yjIuXrDKdhOKmDFemhg=/315x225:3995x2142/1200x625/media/img/mt/2026/02/Radio_Atlantic_Vertical_Melania_Documentary/original.png",
-"publishedAt": "2026-02-07T12:00:00Z",
-"content": "Subscribe here: Apple Podcasts | Spotify | YouTube | Overcast | Pocket CastsOne thing the Melania documentary is not is a documentary, at least in the traditional journalistic understanding of the ge… [+25717 chars]"
-}
-]
 
     constructor (){
         super();
         this.state = {
-            article : this.article,
-            loading : false
+            article : [],
+            loading : false,
+            page: 1
         }
+    }
+
+    async componentDidMount(){
+        const url = import.meta.env.VITE_MY_URL
+        const data = await fetch(url)
+        const parsedData = await data.json()
+        this.setState({
+            article: parsedData.articles
+        })
+    }
+
+    handlePreviousPage = async () =>{
+        const url = `${import.meta.env.VITE_MY_URL}&page=${this.state.page - 1}`;
+        const data = await fetch(url)
+        const parsedData = await data.json()
+        this.setState({
+            article: parsedData.articles,
+            page : this.state.page - 1
+        })
+    }
+    
+    handleNextPage = async () =>{
+        const url = `${import.meta.env.VITE_MY_URL}&page=${this.state.page + 1}`;
+        const data = await fetch(url)
+        const parsedData = await data.json()
+        this.setState({
+            article: parsedData.articles,
+            page : this.state.page + 1
+        })
     }
   render() {
     return (
@@ -219,6 +52,10 @@ export default class News extends Component {
                     </div>
                 )
              })}
+        </div>
+        <div className='d-flex justify-content-between'>
+        <button type="button" className="btn btn-dark" onClick={ this.handlePreviousPage } disabled = {this.state.page <= 1}>&larr; Previous</button>
+        <button type="button" className="btn btn-dark" onClick={ this.handleNextPage }>Next &rarr;</button>
         </div>
       </div>
     )
